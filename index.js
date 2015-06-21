@@ -8,9 +8,14 @@ const request = uri => requestPromise({
 })
 
 Promise.coroutine(function* () {
-  const google = yield request('http://www.google.com'),
-        reddit = yield request('http://www.reddit.com')
+  try {
+    const google = yield request('http://www.google.com'),
+          reddit = yield request('http://www.reddit.comx')
 
-  console.log(google.headers)
-  console.log(reddit.headers)
+    console.log(google.headers)
+    console.log(reddit.headers)
+
+  } catch (error) {
+    console.log(error.toString())
+  }
 })()

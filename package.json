@@ -1,0 +1,16 @@
+{
+  "name": "generator-test",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/babel-node index.js"
+  },
+  "author": "martindederer@gmx.de",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.6.1",
+    "request-promise": "^0.4.2"
+  }
+}
